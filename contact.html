@@ -3,6 +3,7 @@
 
 <head>
     <title>Tech Valley College - Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
@@ -19,142 +20,149 @@
         <!--Navigation-->
 
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="courses.html">Courses</a> |
-            <a href="faculty.html">Faculty</a> |
-            <a href="admissions.html">Admissions</a> |
-            <a href="contact.html">Contact</a> |
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="courses.html">Courses</a>
+            <a href="faculty.html">Faculty</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <hr>
 
     <!--Section 1: Introduction-->
 
-    <div>
-        <h1>Contact Us</h1>
-        <p>“We’re here to help! Whether you have questions about our programs, admission
-            process, or anything else, feel free to reach out to us.”</p>
+    <div class="section">
+        <h2>Contact Us</h2>
+        <p>We’re here to help! Whether you have questions about our programs, admission
+            process, or anything else, feel free to reach out to us.</p>
     </div>
-    <hr>
 
     <!--Section 2: Contact Information-->
 
-    <div>
-        <h2>Get in Touch</h2>
-        <h3>Main Office:</h3>
-        <p>Address: Tech Valley College, Sector 15, Knowledge Park, Bangalore - 560001, Karnataka, India</p>
-        <p>Phone: <a href="+91 123-456-7890">+91 123-456-7890</a><br><br>
-            Email: <a href="mailto:info@techvalley.edu">info@techvalley.edu</a><br><br>
-            Website: www.techvalley.edu
-        </p>
+    <div class="section">
+        <h3>Get in Touch</h3>
+        <div class="container">
+            <div class="card">
+                <h3>Main Office:</h3>
+                <p class="contact-details">Address: Tech Valley College, Sector 15, Knowledge Park, Bangalore - 560001,
+                    Karnataka, India</p><br>
+                <p>Phone: <a href="+91 123-456-7890" class="links-in-card">+91 123-456-7890</a><br>
+                    Email: <a href="mailto:info@techvalley.edu" class="links-in-card">info@techvalley.edu</a><br>
+                    Website: www.techvalley.edu
+                </p>
+            </div>
 
-        <h3>Admissions Office:</h3>
-        <P> Phone: <a href="+91 123-456-7891">+91 123-456-7891</a><br><br>
-            Email: <a href="admissions@techvalley.edu">admissions@techvalley.edu</a><br><br>
-            Timings: Monday to Saturday, 9:00 AM - 5:00 PM
-        </P>
+            <div class="card">
+                <h3>Admissions Office:</h3>
+                <P class="contact-details"> Phone: <a href="+91 123-456-7891">+91 123-456-7891</a><br>
+                    Email: <a href="admissions@techvalley.edu">admissions@techvalley.edu</a><br>
+                    Timings: Monday to Saturday, 9:00 AM - 5:00 PM
+                </P>
+            </div>
 
-        <h3>Placement Cell:</h3>
-        <p>Phone: <a href="+91 123-456-7892">+91 123-456-7892</a><br><br>
-            Email: <a href="placements@techvalley.edu">placements@techvalley.edu</a><br><br>
-            Timings: Monday to Friday, 10:00 AM - 4:00 PM
-        </p>
+            <div class="card">
+                <h3>Placement Cell:</h3>
+                <p class="contact-details">Phone: <a href="+91 123-456-7892">+91 123-456-7892</a><br>
+                    Email: <a href="placements@techvalley.edu">placements@techvalley.edu</a><br>
+                    Timings: Monday to Friday, 10:00 AM - 4:00 PM
+                </p>
+            </div>
+        </div>
     </div>
-    <hr>
 
     <!--Section 3: Quick Contact Form-->
 
-    <div>
-        <h2>Send Us a Message</h2>
-        <p>“Have a question? Fill out this form and we’ll get back to you within
-            24 hours.”</p>
+    <div class="section">
+        <h3>Send Us a Message</h3>
+        <p>Have a question? Fill out this form and we’ll get back to you within
+            24 hours.</p><br>
+        <div class="form-container">
+            <form>
+                <label for="name">Your Name*</label>
+                <input type="text" id="name" name="name" class="text-input"><br><br>
 
-        <form>
-            <label for="name">Your Name*</label>
-            <input type="text" id="name" name="name"><br><br>
+                <label for="email">Your Email*</label>
+                <input type="email" id="email" name="email" class="text-input"><br><br>
 
-            <label for="email">Your Email*</label>
-            <input type="email" id="email" name="email"><br><br>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" pattern="[0-9]{10}" maxlength="10" class="text-input"><br><br>
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" pattern="[0-9]{10}" maxlength="10"><br><br>
+                <!--Setect Button-->
 
-            <!--Setect Button-->
+                <label for="subjet">Subject* </label>
+                <select id="subjet" name="subjet" class="select">
+                    <option value="general inquiry">General Inquiry</option>
+                    <option value="admission information">Admission Information</option>
+                    <option value="course details">Course Details</option>
+                    <option value="placement information">Placement Information</option>
+                    <option value="Scholarship information">Scholarship Information</option>
+                    <option value="technical support">Technical Support</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
 
-            <label for="subjet">Subject* </label>
-            <select id="subjet" name="subjet">
-                <option value="general inquiry">General Inquiry</option>
-                <option value="admission information">Admission Information</option>
-                <option value="course details">Course Details</option>
-                <option value="placement information">Placement Information</option>
-                <option value="Scholarship information">Scholarship Information</option>
-                <option value="technical support">Technical Support</option>
-                <option value="other">Other</option>
-            </select>
-            <br><br>
+                <!--Radio Button-->
 
-            <!--Radio Button-->
+                <label for=" i am a">I am a*</label>
 
-            <label for=" i am a">I am a</label><br><br>
+                <input type="radio" id="prospective student" name="i am a" class="radio-check">
+                <label for="prospective student" class="rc-label">Prospective Student</label>
 
-            <input type="radio" id="prospective student" name="i am a">
-            <label for="prospective student">Prospective Student</label><br><br>
+                <input type="radio" id="current student" name="i am a" class="radio-check">
+                <label for="current student" class="rc-label">Current Student</label>
 
-            <input type="radio" id="current student" name="i am a">
-            <label for="current student">Current Student</label><br><br>
+                <input type="radio" id="parent" name="i am a" class="radio-check">
+                <label for="parent" class="rc-label">Parent/Guardian</label>
 
-            <input type="radio" id="parent" name="i am a">
-            <label for="parent">Parent/Guardian</label><br><br>
+                <input type="radio" id="alumni" name="i am a" class="radio-check">
+                <label for="alumni" class="rc-label">Alumni</label><br>
 
-            <input type="radio" id="alumni" name="i am a">
-            <label for="alumni">Alumni</label><br><br>
+                <input type="radio" id="other" name="i am a" class="radio-check">
+                <label for="other" class="rc-label">Other</label><br>
 
-            <input type="radio" id="other" name="i am a">
-            <label for="other">Other</label><br><br>
+                <!--Message-->
 
-            <!--Message-->
+                <label for="message">Message*</label>
+                <input type="text" id="message" name="message" placeholder="Write your message here" class="text-input">
 
-            <label for="message">Message*</label>
-            <input type="text" id="message" name="message" placeholder="Write 
-your message here"><br><br>
+                <!--Recevie updates chechbox-->
 
-            <!--Recevie updates chechbox-->
+                <label>Would you like to receive updates about Tech Valley College? :</label>
+                <input type="checkbox" name="update" value="yes" class="radio-check">Yes, I would like to receive
+                newsletters and
+                updates<br><br>
 
-            <label>Would you like to receive updates about Tech Valley College? :</label><br><br>
-            <input type="checkbox" name="update" value="yes">Yes, I would like to receive newsletters and
-            updates<br><br>
+                <!--Buttons-->
 
-            <!--Buttons-->
-
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </form>
+                <button class="submit" type="submit">Send Message</button>
+                <button class="reset" type="reset">Clear Form</button>
+            </form>
+        </div>
     </div>
-    <hr>
 
     <!--Section 4: Campus Location-->
 
-    <div>
-        <h2>Visit Our Campus</h2>
-        <p>“We encourage prospective students and parents to visit our campus. See our
-            facilities, meet our faculty, and experience the Tech Valley environment firsthand.”</p>
+    <div class="section">
+        <h3>Visit Our Campus</h3>
+        <p>We encourage prospective students and parents to visit our campus. See our
+            facilities, meet our faculty, and experience the Tech Valley environment firsthand.</p>
         <h3>Directions:</h3>
         <ul>
-            <li>By Metro: Get down at Knowledge Park Station, Gate 3</li>
-            <li>By Bus: Routes 15, 23, 45 stop directly at college gate</li>
-            <li>By Car: Ample parking available on campus</li>
-            <li>Nearest Railway Station: Bangalore Central (15 km)</li>
-            <li>Nearest Airport: Kempegowda International Airport (35 km)</li>
+            <div class="container1">
+                <li>By Metro: Get down at Knowledge Park Station, Gate 3</li>
+                <li>By Bus: Routes 15, 23, 45 stop directly at college gate</li>
+                <li>By Car: Ample parking available on campus</li>
+                <li>Nearest Railway Station: Bangalore Central (15 km)</li>
+                <li>Nearest Airport: Kempegowda International Airport (35 km)</li>
         </ul>
     </div>
-    <hr>
+    </div>
 
     <!--Section 5: Office Hours-->
 
-    <div>
-        <h2>When to Visit</h2>
-        <table border="1">
+    <div class="section">
+        <h3>When to Visit</h3>
+        <table>
             <tr>
                 <th>Day</th>
                 <th>Timings</th>
@@ -188,17 +196,16 @@ your message here"><br><br>
                 <td>Closed</td>
             </tr>
         </table>
-        <p>“Please note: Campus is closed on public holidays. For special
-            visits on closed days, please contact us in advance.”</p>
+        <p>Please note: Campus is closed on public holidays. For special
+            visits on closed days, please contact us in advance.</p>
     </div>
-    <hr>
 
     <!--Section 6: Department-wise Contact-->
 
-    <div>
-        <h2>Specific Departments</h2>
+    <div class="section">
+        <h3>Specific Departments</h3>
 
-        <table border="1">
+        <table>
             <tr>
                 <th>Department</th>
                 <th>Contact Person</th>
@@ -236,32 +243,33 @@ your message here"><br><br>
             </tr>
         </table>
     </div>
-    <hr>
 
     <!--Section 7: Connect With Us-->
 
-    <div>
-        <h2>Follow Us on Social Media</h2>
-        <p>“Stay updated with the latest news, events, and achievements from
-            Tech Valley College.”</p>
+    <div class="section">
+        <h3>Follow Us on Social Media</h3>
+        <p>Stay updated with the latest news, events, and achievements from
+            Tech Valley College.</p>
 
         <!--Links-->
 
-        <ul>
-            <li><a href="https://facebook.com/techvalleycollege" target="_blank">Facebook</a></li>
-            <li><a href="https://twitter.com/techvalley" target="_blank">Twitter</a></li>
-            <li><a href="https://linkedin.com/school/tech-valley-college" target="_blank">linkedin</a></li>
-            <li><a href="https://instagram.com/techvalleycollege" target="_blank">instagram</a></li>
-            <li><a href="https://youtube.com/techvalleycollege" target="_blank">youtube</a> </li>
-        </ul>
+            <ul>
+                <div class="social-links">
+                    <li><a href="https://facebook.com/techvalleycollege" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/techvalley" target="_blank">Twitter</a></li>
+                    <li><a href="https://linkedin.com/school/tech-valley-college" target="_blank">linkedin</a></li>
+                    <li><a href="https://instagram.com/techvalleycollege" target="_blank">instagram</a></li>
+                    <li><a href="https://youtube.com/techvalleycollege" target="_blank">youtube</a> </li>
+                </div>
+            </ul>
     </div>
-    <hr>
 
     <!--Footer-->
     <footer>
-        <p>© 2024 Tech Valley College. All Rights Reserved.</p>
-        <p>Email: <a href="info@techvalley.edu">info@techvalley.edu</a><br><br>
-            Phone: <a href="+91 123-456-7890">+91 123-456-7890</a> </p>
+        <p>© 2024 Tech Valley College. All Rights Reserved.<br>
+            Email: <a href="info@techvalley.edu">info@techvalley.edu</a><br>
+            Phone: <a href="+91 123-456-7890">+91 123-456-7890</a>
+        </p>
     </footer>
 
 </body>
